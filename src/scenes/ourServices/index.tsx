@@ -95,5 +95,5 @@ const ourServices = ({setSelectedPage}: Props) => {
         </section>
     )
 }
-
+// new changes
 export default ourServices;
