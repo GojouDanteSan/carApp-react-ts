@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { Bars3Icon, XMarkIcon } from "@heroicons/react/24/solid";
-import Logo from "@/assets/Logo.png";
+import LogoText from "@/assets for cars/LogoText.png";
 import Link from "./Link";
 import { SelectedPage } from "@/shared/types";
 import useMediaQuery from "@/hooks/useMediaQuery";
@@ -26,13 +26,13 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
         <div className={`${flexBetween} mx-auto w-5/6`}>
           <div className={`${flexBetween} w-full gap-16`}>
             {/* LEFT SIDE */}
-            <img alt="logo" src={Logo} />
+            <img alt="logotext" src={LogoText} width="200" height="150" />
 
             {/* RIGHT SIDE */}
             {isAboveMediumScreens ? (
               <div className={`${flexBetween} w-full`}>
                 <div className={`${flexBetween} gap-8 text-sm`}>
-                  <Link
+                  <Link 
                     page="Home"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
@@ -43,7 +43,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                     setSelectedPage={setSelectedPage}
                   />
                   <Link
-                    page="Our Classes"
+                    page="Our Services"
                     selectedPage={selectedPage}
                     setSelectedPage={setSelectedPage}
                   />
@@ -56,7 +56,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
                 <div className={`${flexBetween} gap-8`}>
                   <p>Sign In</p>
                   <ActionButton setSelectedPage={setSelectedPage}>
-                    Become a Member
+                    Book Your Mods
                   </ActionButton>
                 </div>
               </div>
@@ -78,7 +78,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
           {/* CLOSE ICON */}
           <div className="flex justify-end p-12">
             <button onClick={() => setIsMenuToggled(!isMenuToggled)}>
-              <XMarkIcon className="h-6 w-6 text-gray-400" />
+              <XMarkIcon className="h-6 w-6 text-black" />
             </button>
           </div>
 
@@ -95,7 +95,7 @@ const Navbar = ({ isTopOfPage, selectedPage, setSelectedPage }: Props) => {
               setSelectedPage={setSelectedPage}
             />
             <Link
-              page="Our Classes"
+              page="Our Services"
               selectedPage={selectedPage}
               setSelectedPage={setSelectedPage}
             />

@@ -1,10 +1,10 @@
 import HText from "@/shared/HText"
 import { BenefitType, SelectedPage } from "@/shared/types"
-import { HomeModernIcon, UserGroupIcon, AcademicCapIcon } from "@heroicons/react/24/solid"
+import { HomeModernIcon, UserGroupIcon, WrenchScrewdriverIcon } from "@heroicons/react/24/solid"
 import { motion } from "framer-motion"
 import Benefit from "./Benefits";
 import ActionButton from "@/shared/ActionButton";
-import BenefitsPageGraphic from "@/assets/BenefitsPageGraphic.png";
+import BenefitsPageGraphic from "@/assets for cars/BenefitsPageGraphic.jpg";
 
 
 const benefits: Array<BenefitType> = [
@@ -16,13 +16,13 @@ const benefits: Array<BenefitType> = [
   },
   {
     icon: <UserGroupIcon className="h-6 w-6" />,
-    title: "100's of Diverse Classes",
+    title: "100's of Happy Customer",
     description:
       "Eu ipsum id egestas risus tempus enim semper felis quis. Nec consectetur ac venenatis facilisi est. Eget ac turpis id.",
   },
   {
-    icon: <AcademicCapIcon className="h-6 w-6" />,
-    title: "Expert and Pro Trainers",
+    icon: <WrenchScrewdriverIcon className="h-6 w-6" />,
+    title: "Expert and Pro Technicians",
     description:
       "Fusce vestibulum aliquam ut cras. Nisl lectus egestas sapien nisl. Lacus at mi sit pellentesque. Congue parturient.",
   },
@@ -57,11 +57,11 @@ const Benefits = ({setSelectedPage}: Props) => {
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },
           }}>
-          <HText>MORE THAN JUST A GYM</HText>
+          <HText>MORE THAN JUST A GARAGE</HText>
           <p className="my-5 text-sm">  
-            We provide world class fitness equipment, trainers and classes to
-            get you to your ultimate fitness goals with ease. We provide true
-            care into each and every member.
+            We provide world class Service for your ride, from general service to 
+            complete modification. Which all comes for you in a very affordable price. 
+            We provide true care into each and every customers.
           </p>
         </motion.div>
         {/*Benefits*/}
@@ -83,12 +83,14 @@ const Benefits = ({setSelectedPage}: Props) => {
           ))}
         </motion.div>
             {/* GRAPHICS AND DESCRIPTION */}
-        <div className="mt-16 items-center justify-between gap-20 md:mt-28 md:flex">
+        <div className="mt-16 items-center justify-between gap-32 md:mt-28 md:flex">
           {/* GRAPHIC */}
           <img
             className="mx-auto"
             alt="benefits-page-graphic"
             src={BenefitsPageGraphic}
+            height={700}
+            width={350}
           />
 
           {/* DESCRIPTION */}
@@ -96,7 +98,7 @@ const Benefits = ({setSelectedPage}: Props) => {
             {/* TITLE */}
             <div className="relative">
               <div className="before:absolute before:-top-20 before:-left-20 
-              before:z-[1] before:content-abstractwaves">
+              before:z-[1] before:content-stripes">
                 <motion.div
                   initial="hidden"
                   whileInView="visible"
@@ -109,7 +111,7 @@ const Benefits = ({setSelectedPage}: Props) => {
                 >
                   <HText>
                     MILLIONS OF HAPPY MEMBERS GETTING{" "}
-                    <span className="text-primary-500">FIT</span>
+                    <span className="text-primary-500">CUSTOMIZED</span>
                   </HText>
                 </motion.div>
               </div>
@@ -144,9 +146,9 @@ const Benefits = ({setSelectedPage}: Props) => {
 
             {/* BUTTON */}
             <div className="relative mt-16">
-              <div className="before:absolute before:-bottom-20 before:right-40 before:z-[-1] before:content-sparkles">
+              <div className="before:absolute before:-bottom-20 before:right-10 before:z-[-1] before:content-treads">
                 <ActionButton setSelectedPage={setSelectedPage}>
-                  Join Now
+                  Book Now
                 </ActionButton>
               </div>
             </div>

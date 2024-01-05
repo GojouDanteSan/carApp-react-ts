@@ -5,12 +5,13 @@ module.exports = {
     extend: {
       colors: {
         "gray-20": "#F8F4EB",
-        "gray-50": "#EFE6E6",
+        "gray-50": "#FFFFFF", // Colour : white
         "gray-100": "#DFCCCC",
-        "gray-500": "#5E0000",
-        "primary-100": "#FFE1E0",
+        "black": "#000000", // Colour : Black
+        "primary-100": "#B4B4B4", // Colour : Light grey
         "primary-300": "#FFA6A3",
-        "primary-500": "#FF6B66",
+        "primary-500": "#E80000", // Colour : Dark red
+        "Light-red": "#F73920", // Colour : Dark red
         "secondary-400": "#FFCD5B",
         "secondary-500": "#FFC132",
       },
@@ -25,8 +26,8 @@ module.exports = {
       },
       content: {
         evolvetext: "url('./assets/EvolveText.png')",
-        abstractwaves: "url('./assets/AbstractWaves.png')",
-        sparkles: "url('./assets/Sparkles.png')",
+        stripes: "url('./assets for cars/Stripes.png')",
+        treads: "url('./assets for cars/Treads.png')",
         circles: "url('./assets/Circles.png')",
       },
     },

@@ -32,7 +32,7 @@ const Benefit = ({ icon, title, description, setSelectedPage }: Props) => {
         onClick={() => setSelectedPage(SelectedPage.ContactUs)}
         href={`#${SelectedPage.ContactUs}`}
       >
-        <p>Learn More</p>
+        <p className="text-lg">Learn More</p>
       </AnchorLink>
     </motion.div>
   );

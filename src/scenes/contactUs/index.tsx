@@ -1,7 +1,7 @@
 import { useForm } from "react-hook-form";
 import { SelectedPage } from "@/shared/types";
 import { motion } from "framer-motion";
-import ContactUsPageGraphic from "@/assets/ContactUsPageGraphic.png";
+import ContactUsPageGraphic from "@/assets for cars/ContactUsPageGraphic.jpg";
 import HText from "@/shared/HText";
 
 type Props = {
@@ -9,7 +9,7 @@ type Props = {
 };
 
 const ContactUs = ({ setSelectedPage }: Props) => {
-  const inputStyles = `mb-5 w-full rounded-lg bg-primary-300
+  const inputStyles = `mb-5 w-full rounded-lg bg-Light-red
   px-5 py-3 placeholder-white`;
 
   const {
@@ -43,7 +43,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
           }}
         >
           <HText>
-            <span className="text-primary-500">JOIN NOW</span> TO GET IN SHAPE
+            <span className="text-primary-500">JOIN NOW</span> TO GET CUSTOMIZED
           </HText>
           <p className="my-5">
             Congue adipiscing risus commodo placerat. Tellus et in feugiat nisl
@@ -69,9 +69,9 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               target="_blank"
               onSubmit={onSubmit}
               action="https://formsubmit.co/e8a5bdfa807605332f809e5656e27c6e"
-              method="POST"
+              method="POST" 
             >
-              <input
+              <input 
                 className={inputStyles}
                 type="text"
                 placeholder="NAME"
@@ -127,7 +127,7 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               <button
                 type="submit"
                 className="mt-5 rounded-lg bg-secondary-500 px-20 py-3 
-                transition duration-500 hover:text-white"
+                transition duration-500 hover:bg-Light-red text-black"
               >
                 SUBMIT
               </button>
@@ -145,7 +145,8 @@ const ContactUs = ({ setSelectedPage }: Props) => {
               visible: { opacity: 1, y: 0 },
             }}
           >
-            <div className="w-full before:absolute before:-bottom-20 before:-right-10 before:z-[-1] md:before:content-evolvetext">
+            <div className="w-full before:absolute before:-bottom-24 before:-right-10 before:z-[-1] 
+            md:before:content-evolvetext">
               <img
                 className="w-full"
                 alt="contact-us-page-graphic"
