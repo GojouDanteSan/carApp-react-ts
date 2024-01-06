@@ -4,7 +4,7 @@ import { HomeModernIcon, UserGroupIcon, WrenchScrewdriverIcon } from "@heroicons
 import { motion } from "framer-motion"
 import Benefit from "./Benefits";
 import ActionButton from "@/shared/ActionButton";
-import BenefitsPageGraphic from "@/assets for cars/BenefitsPageGraphic.jpg";
+import BenefitsPageGraphic from "@/assets for cars/BenefitsPageGraphic.webp";
 
 
 const benefits: Array<BenefitType> = [
@@ -52,7 +52,7 @@ const Benefits = ({setSelectedPage}: Props) => {
           initial="hidden"
           whileInView="visible"
           viewport={{ once: true, amount: 0.5 }}
-          transition={{ duration: 0.5 }}
+          transition={{ duration: 0.10 }}
           variants={{
             hidden: { opacity: 0, x: -50 },
             visible: { opacity: 1, x: 0 },

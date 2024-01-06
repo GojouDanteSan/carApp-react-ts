@@ -58,17 +58,17 @@ const ourServices = ({setSelectedPage}: Props) => {
             <motion.div onViewportEnter={() => setSelectedPage(SelectedPage.OurServices)}
             >
                 <motion.div 
-                className="mx-auto w-5/6"
+                className="mx-auto w-5/6 "
                 initial="hidden"
                 whileInView="visible"
-                viewport={{ once: true, amount: 0.5 }}
-                transition={{ duration: 0.5 }}
+                viewport={{ once: true, amount: 0.9 }}
+                transition={{ duration: 0.9 }}
                 variants={{
                 hidden: { opacity: 0, x: -50 },
                 visible: { opacity: 1, x: 0 },
                 }}
                 >
-                    <div className="md:w-5/5 bg-white px-10 py-10 rounded-3xl">
+                    <div className="md:w-3/5 py-5 rounded-3xl">
                         <HText>OUR SERVICES</HText>
                         <p className="py-5">
                           Fringilla a sed at suspendisse ut enim volutpat. Rhoncus vel est
@@ -95,5 +95,5 @@ const ourServices = ({setSelectedPage}: Props) => {
         </section>
     )
 }
-// new changes
+
 export default ourServices;
